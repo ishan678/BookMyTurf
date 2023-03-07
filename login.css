@@ -10,7 +10,6 @@ html,body{
   height: 100%;
   width: 100%;
   place-items: center;
-  /* background: -webkit-linear-gradient(left, #3b363b, #fa4299); */
   background: radial-gradient(50% 50% at 50% 50%, #D6F8E1 0%, #348750 100%);
 }
 ::selection{
@@ -115,7 +114,7 @@ input[type="radio"]{
   width: 100%;
   outline: none;
   padding-left: 15px;
-  border-radius: 25px;
+  border-radius: 5px;
   border: 1px solid lightgrey;
   border-bottom-width: 2px;
   font-size: 17px;
