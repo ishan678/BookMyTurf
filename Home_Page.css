@@ -12,7 +12,7 @@ html {
 header {
   position: fixed;
   width: 100%;
-  background-color: #000000;
+  background: -webkit-linear-gradient(left, #0f9c3e, #69e88b);
   padding: 3rem 5rem;
 }
 nav {
@@ -33,7 +33,7 @@ nav a {
   text-decoration: none;
 }
 nav a#logo {
-  color: #51b04f;
+  color: #ffffff;
   font-weight: 700;
   font-size: 50px;
   /* position: absolute;
@@ -46,7 +46,7 @@ nav ul a {
   margin-left: 40px;
 }
 nav ul a:hover {
-  color:#51b04f;
+  color:#082b07;
 }
 section#home {
   height: 100vh;
