@@ -11,4 +11,6 @@ navLinks.forEach((navLinks) => {
     navBar.classList.remove("active");
     hamMenuIcon.classList.toggle("fa-times");
   });
-});
+ });
+
+
