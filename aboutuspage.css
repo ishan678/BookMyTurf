@@ -10,8 +10,9 @@
    
     .testimonials{
         display: flex;
+        width: auto;
         flex-wrap: wrap;
-        padding-top: 10px;
+        /* padding-top: 10px; */
     }
 
     .testimonials-1{
@@ -49,8 +50,8 @@
         width: auto;
         height: auto;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column-reverse;
+        flex-wrap: wrap;
     }
 
     .mission1{
@@ -59,6 +60,24 @@
     }
 
     .mission2{
+        flex-basis: 100%;
+        height: 50%;
+    }
+
+    .vision{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .vision1{
+        flex-basis: 100%;
+        height: auto;
+    }
+
+    .vision2{
         flex-basis: 100%;
         height: 50%;
     }
@@ -133,13 +152,35 @@
     padding: 65px;
 }
 
+.vision{
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.vision1{
+    /* background-color: blanchedalmond; */
+    width: 50%;
+    float: left;
+}
+
+.vision2{
+    /* background-color: rgb(66, 111, 150); */
+    width: 50%;
+    float: right;
+    /* height: 0px; */
+    padding: 65px;
+}
+
 #text_all{
     overflow: hidden;
     text-align: justify;
 }
 
 #image_all{
-    width: auto;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -155,6 +196,7 @@
     align-items: center;
     max-width: 1100px;
     margin: auto;
+    margin-top: 20px;
    /* margin-bottom: 50px;*/
 }
 
