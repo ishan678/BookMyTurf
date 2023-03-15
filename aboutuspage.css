@@ -18,17 +18,61 @@
         width: 100%;
         margin-top: 10px;
     }
+
+    /* .box{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    } */
+
+    .goal{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .goal1{
+        flex-basis: 100%;
+        height: auto;
+    }
+
+    .goal2{
+        flex-basis: 100%;
+        height: 50%;
+    }
+
+    .mission{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .mission1{
+        flex-basis: 100%;
+        height: auto;
+    }
+
+    .mission2{
+        flex-basis: 100%;
+        height: 50%;
+    }
 }
 
 .main_container{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     width: 100%;
     height: auto;
     /* padding: 300px; */
 }
 
 .container0{
-    background-color: bisque;
+    background-color: rgb(163, 39, 111);
     padding: 100px 0px 100px 0px;
 }
 
@@ -37,29 +81,68 @@
     font-size: 7vw;
 }
 
+/* .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+} */
+
 .goal{
     width: 100%;
     background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    height: auto;
 }
 
 .goal1{
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
     width: 50%;
-}
-
-.goal1 img{
-    width: 80%;
-    /* display: inline; */
+    float: left;
 }
 
 .goal2{
-    background-color: aliceblue;
+    /* background-color: rgb(66, 111, 150); */
+    width: 50%;
+    float: right;
+    /* height: 0px; */
+    padding: 65px;
+}
+
+.mission{
+    width: 100%;
+    background-color: rgb(184, 201, 58);
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.mission1{
+    /* background-color: blanchedalmond; */
     width: 50%;
     float: right;
 }
 
-.goal p{
+.mission2{
+    /* background-color: rgb(66, 111, 150); */
+    width: 50%;
+    float: left;
+    /* height: 0px; */
+    padding: 65px;
+}
+
+#text_all{
     overflow: hidden;
+    text-align: justify;
+}
+
+#image_all{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 
