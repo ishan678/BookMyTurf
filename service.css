@@ -12,6 +12,8 @@ section {
     place-items: center;
 }
 
+
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -83,22 +85,24 @@ p {
 
 @media screen and (min-width: 768px) {
     section {
-        padding: 0 2em;
+        padding: 1em 2em;
     }
 
     .column {
         flex: 0 50%;
         max-width: 50%;
     }
+
 }
 
 @media screen and (min-width: 992px) {
     section {
-        padding: 1em 3em;
+        padding: 2em 4em;
     }
 
     .column {
         flex: 0 0 33.33%;
         max-width: 33.33%;
     }
+
 }
