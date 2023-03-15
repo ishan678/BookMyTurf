@@ -2,7 +2,8 @@
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'poppins', sans-serif;
+    font-size: 2vh;
     /* background-color: antiquewhite; */
 }
 
@@ -131,6 +132,7 @@
     /* background-color: blanchedalmond; */
     width: 50%;
     float: left;
+    display: flex;
 }
 
 .goal2{
