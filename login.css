@@ -5,17 +5,29 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+/* @media all and (max-width: 900px){
+  .wrapper{
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow-x: hidden;
+  }
+} */
+
 html,body{
   display: grid;
   height: 100%;
   width: 100%;
   place-items: center;
-  background: radial-gradient(50% 50% at 50% 50%, #D6F8E1 0%, #348750 100%);
+  background-image: radial-gradient(white,#99f5a4);
 }
 ::selection{
   background: #0f9c3e;
   color: #fff;
 }
+
+
+
 .wrapper{
   overflow: hidden;
   max-width: 390px;
@@ -23,10 +35,12 @@ html,body{
   padding: 30px;
   border-radius: 5px;
   box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  margin: 0px 10px 0px 10px;
 }
 .wrapper .title-text{
   display: flex;
-  width: 200%;
+  width: 210%;
+  /* overflow: hidden; */
 }
 .wrapper .title{
   width: 50%;
