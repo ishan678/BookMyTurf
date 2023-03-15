@@ -1,33 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
-nav{
+
+nav {
   background-color: #1a1919;
   padding: 5px 40px;
 }
-nav ul{
+
+nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-nav ul li{
+
+nav ul li {
   padding: 15px 0;
   cursor: pointer;
 }
-nav ul li.items{
+
+nav ul li.items {
   position: relative;
   width: auto;
   margin: 0 16px;
   text-align: center;
   order: 3;
 }
-nav ul li.items:after{
+
+nav ul li.items:after {
   position: absolute;
   content: '';
   left: 0;
@@ -38,11 +44,12 @@ nav ul li.items:after{
   opacity: 0;
   transition: all 0.2s linear;
 }
+
 /* nav ul li.items:hover:after{
   opacity: 1;
   bottom: 8px;
 } */
-nav ul li.logo{
+nav ul li.logo {
   flex: 1;
   color: white;
   font-size: 23px;
@@ -50,62 +57,103 @@ nav ul li.logo{
   cursor: default;
   user-select: none;
 }
-nav ul li a{
+
+nav ul li a {
   color: white;
   font-size: 18px;
   text-decoration: none;
   transition: .4s;
 }
-nav ul li:hover a{
+
+nav ul li:hover a {
   /* color: rgb(193, 181, 181); */
   color: #fff;
   text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px #0fa,
-      0 0 82px #0fa,
-      0 0 92px #0fa,
-      0 0 102px #0fa,
-      0 0 151px #0fa;
-      text-decoration: none;
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+  text-decoration: none;
 }
-nav ul li i{
+
+nav ul li i {
   font-size: 23px;
 }
-nav ul li.btn{
+
+nav ul li.btn {
   display: none;
 }
-nav ul li.btn.hide i:before{
+
+nav ul li.btn.hide i:before {
   content: '\f00d';
 }
-@media all and (max-width: 900px){
-  nav{
+
+@media all and (max-width: 900px) {
+  nav {
     padding: 5px 30px;
   }
-  nav ul li.items{
+
+  nav ul li.items {
     width: 100%;
     display: none;
   }
-  nav ul li.items.show{
+
+  nav ul li.items.show {
     display: block;
   }
-  nav ul li.btn{
+
+  nav ul li.btn {
     display: block;
   }
-  nav ul li.items:hover{
+
+  nav ul li.items:hover {
     border-radius: 5px;
     box-shadow: inset 0 0 5px #69d18a,
-                inset 0 0 10px #000000;
+      inset 0 0 10px #000000;
   }
-  nav ul li.items:hover:after{
+
+  nav ul li.items:hover:after {
     opacity: 0;
   }
-}
-body{
-  background-color: #0f9c3e;
+
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  }
+
+  .section-1 {
+    flex-basis: 100%;
+    /* height: 70%;  */
+    padding: 0px;
+  }
+
+  .section-2 {
+    flex-basis: 100%;
+    height: 50%;
+    /* display: none; */
+  }
+
+  .section-2 img {
+    height: auto;
+    width: auto;
+  }
+
 
 }
+
+body {
+  /* background-color: #0f9c3e; */
+
+}
+
 /* .section-1{
   width: 50%;
   background-color: aliceblue;
@@ -114,47 +162,53 @@ body{
 } 
  */
 
-.section-1{
-  background-color: aquamarine;
-  /* height: auto; */
-  width: 50%;
-  overflow-x: hidden;
-  padding: 25px;
-}
-.section-1 p {
-  padding: 15px;
-}
-.section-2{
-  width: 50%;
-  background-color: black;
-}
-/* .section-2{
-  display: flex;
-  float: right;
+.main-container {
   width: 100%;
-}*/
-.section-2 img{
-  width: 100%;
-  height: auto;
-}  
-
-#button-1{
-  padding: 10px;
-  border: 2px solid black;
-  border-radius: 5px;
-  align-items: center;
-  background-color: #0f9c3e;
-}
-#button-2{
-  padding: 10px;
-  border: 2px solid black;
-  border-radius: 5px;
-  align-items: center;
-  background-color: #0f9c3e;
-}
-.main-container{
+  background-color: aqua;
   display: flex;
   flex-direction: row;
   height: auto;
+}
+
+.section-1 {
+  width: 50%;
+  /* float: left; */
+  /* background-color: bisque; */
+  /* margin: 30px; */
+  padding: 100px 50px 30px 50px;
+  overflow-x: hidden;
+}
+
+.section-1 p {
+  /* padding: 15px; */
+}
+
+.section-1-2{
+  margin-top: 30px;
+}
+
+#button-1 {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  align-items: center;
+  background-color: #0f9c3e;
+}
+
+#button-2 {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  align-items: center;
+  background-color: #0f9c3e;
+}
+
+.section-2 {
+  width: 50%;
+  /* background-color: black; */
+}
+
+.section-2 img {
   width: 100%;
+  height: auto;
 }
