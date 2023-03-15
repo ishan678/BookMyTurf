@@ -20,20 +20,13 @@
         margin-top: 10px;
     }
 
-    /* .box{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    } */
-
     .goal{
         width: auto;
         height: auto;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        margin: auto;
     }
 
     .goal1{
@@ -81,6 +74,26 @@
         flex-basis: 100%;
         height: 50%;
     }
+
+    /* FOOTER CSS RESPONSIVE */
+
+    .footer{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 40px 0px;
+    }
+
+    #foot_all{
+        padding-bottom: 20px;
+    }
+
+    .footer p{
+        text-align: center;
+    }
+
+
 }
 
 .main_container{
@@ -91,7 +104,7 @@
 }
 
 .container0{
-    background-color: rgb(163, 39, 111);
+    background-image: radial-gradient(white,#99f5a4);
     padding: 100px 0px 100px 0px;
 }
 
@@ -100,20 +113,18 @@
     font-size: 7vw;
 }
 
-/* .box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1300px;
-    margin: auto;
-} */
+.box{
+    margin: 20px;
+}
 
 .goal{
     width: 100%;
-    background-color: aqua;
+    background-image: radial-gradient(#99f5a4,white);
     display: flex;
     flex-direction: row;
     height: auto;
+    border: 1px ;
+    border-radius: 20px;
 }
 
 .goal1{
@@ -132,10 +143,13 @@
 
 .mission{
     width: 100%;
-    background-color: rgb(184, 201, 58);
+    background-image: radial-gradient(#99f5a4,white);
     display: flex;
     flex-direction: row;
     height: auto;
+    margin-top: 20px;
+    border: 1px ;
+    border-radius: 20px;
 }
 
 .mission1{
@@ -154,10 +168,13 @@
 
 .vision{
     width: 100%;
-    background-color: aqua;
+    background-image: radial-gradient(#99f5a4,white);
     display: flex;
     flex-direction: row;
     height: auto;
+    margin-top: 20px;
+    border: 1px ;
+    border-radius: 20px;
 }
 
 .vision1{
@@ -188,7 +205,7 @@
 
 
 
-
+/* TESTIMONIALS FOR ABOUT US */
 
 .testimonials{
     display: flex;
@@ -196,8 +213,8 @@
     align-items: center;
     max-width: 1100px;
     margin: auto;
-    margin-top: 20px;
-   /* margin-bottom: 50px;*/
+    margin-top: 80px;
+    margin-bottom: 40px;
 }
 
 .testimonials-1{
@@ -205,20 +222,15 @@
     flex-direction: column;
     justify-content: center;
     border: 1px solid #deebce;
+    border-radius: 20px;
     height: 400px;
     text-align: center;
     align-items: center;
     margin-left: 40px ;
     margin-right: 40px;
-    background-color: #deebce;
+    background-color: #99f5a4;
     transition: transform 0.5s;
 }
-
-/* .testimonials-1:hover{
-    transform: translateY(-10px);
-    cursor: pointer;
-    box-shadow: 0 4px 8px 0px #43be6a, 0 6px 20px 0 white;
-} */
 
 .testimonials-1 img{
     height: 150px;
@@ -230,4 +242,37 @@
 .testimonials-1 p{
     padding: 15px 5px 10px 5px;
     font-size: 12px;
+}
+
+
+
+/* FOOTER CSS */
+
+.foot{
+    background-color: black;
+    color: white;
+    height: auto;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+    height: auto;
+    padding: 50px 0px;
+}
+
+.foot1 img{
+    height: 40px;
+}
+
+.foot2 img{
+    height: 40px;
+}
+
+.footer p{
+    font-size: 12px;
+    line-height: 2;
 }
