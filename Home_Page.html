@@ -1,18 +1,20 @@
 <!DOCTYPE html>
+
 <head>
    <meta charset="utf-8">
    <title>BookMyTurf</title>
    <link rel="stylesheet" href="Home_Page.css">
-   <script src="https://code.jquery.com/jquery-3.4.1.js"></script> 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
    <script src="Home_Page.js"></script>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
    <nav>
       <ul>
          <li class="logo">BookMyTurf</li>
-         <li class="items"><a href="#">Home</a></li>
+         <li class="items"><a href="Home_Page.html">Home</a></li>
          <li class="items"><a href="aboutuspage.html">About</a></li>
          <li class="items"><a href="service.html">Services</a></li>
          <li class="items"><a href="Contact_Us.html">Contact</a></li>
@@ -21,30 +23,49 @@
       </ul>
    </nav>
    <script>
-      $(document).ready(function(){
-        $('.btn').click(function(){
-          $('.items').toggleClass("show");
-          $('ul li').toggleClass("hide");
-        });
+      $(document).ready(function () {
+         $('.btn').click(function () {
+            $('.items').toggleClass("show");
+            $('ul li').toggleClass("hide");
+         });
       });
    </script>
-   
+
    <div class="main-container">
       <div class="section-1">
          <div class="section-1-1">
-            <h1>Book Your </h1><h1> Favourite Turf Online</h1>
-         <p>Your Favourite Venue is Just A Tap</p>
+            <h1>Book Your </h1>
+            <h1> Favourite Turf Online</h1>
+            <p>Your Favourite Venue is Just A Tap</p>
          </div>
          <div class="section-1-2">
-            <div class="btn-1"><button type="submit" id="button-1"><a href="bookturf.html">Book Venue</a></button></div>
-            <div class="btn-1"><button type="submit" id="button-2">Register Turf</button></div>
+            <div class="btn-1"><button type="button" id="button-1" onclick="window.location.href='bookturf.html';">Book
+                  Turf</button></div>
+            <div class="btn-1"><button type="button" id="button-2" onclick="window.location.href='login.html';">Register
+                  Turf</button></div>
          </div>
-            
+
       </div>
       <div class="section-2">
          <img src="images/image1.png">
-      </div>      
+      </div>
    </div>
-
+   <div class="container-second">
+      <div class="box-container">
+         <div class="box-1">
+            <h4>Search</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sit saepe animi nesciunt natus recusandae iusto sed repudiandae illum officia explicabo mollitia incidunt omnis inventore nihil, non cumque quas autem nobis iste et! Voluptatibus.</p>
+         </div>
+         <div class="box-2">
+            <h4>Book</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae maiores facilis est omnis corrupti! Expedita aliquid voluptate reiciendis porro aspernatur omnis nam asperiores enim cumque fugiat sit non doloremque minus velit, cupiditate provident perspiciatis!</p>
+         </div>
+         <div class="box-3">
+            <h4>Play</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore molestias, fugiat rerum laboriosam nulla at quos asperiores officia architecto quas ex iusto in. Obcaecati illum minima ducimus blanditiis reiciendis autem laudantium eum nulla incidunt?</p>
+         </div>
+      </div>
+   </div>
 </body>
+
 </html>
